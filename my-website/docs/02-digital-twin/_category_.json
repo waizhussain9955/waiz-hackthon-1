@@ -1,0 +1,8 @@
+{
+    "label": "Module 02: Digital Twin",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "Master physics simulation with Gazebo and high-fidelity rendering with Unity."
+    }
+}

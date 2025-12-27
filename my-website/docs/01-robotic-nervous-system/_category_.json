@@ -1,0 +1,8 @@
+{
+    "label": "Module 01: Robotic Nervous System",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "Master ROS 2 - the middleware that connects AI agents to robot hardware."
+    }
+}

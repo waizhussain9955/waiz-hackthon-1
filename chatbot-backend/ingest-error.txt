@@ -1,0 +1,183 @@
+﻿python : 2025-12-27 03:30:44.656741: I 
+tensorflow/core/util/port.cc:153] oneDNN 
+custom operations are on. You may see 
+slightly different numerical results due 
+to floating-point round-off errors from 
+different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+At line:1 char:1
++ python ingest.py 2>&1 | Out-File 
+-FilePath ingest-error.txt -Encoding ...
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecifie 
+   d: (2025-12-27 03:3...ONEDNN_OPTS=0`.  
+  :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComma 
+   ndError
+ 
+2025-12-27 03:30:53.104341: I 
+tensorflow/core/util/port.cc:153] oneDNN 
+custom operations are on. You may see 
+slightly different numerical results due 
+to floating-point round-off errors from 
+different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\activations_tf.py", line 22, in 
+<module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 
+'tf_keras'
+
+During handling of the above exception, 
+another exception occurred:
+
+Traceback (most recent call last):
+  File 
+"C:\Users\Waiz-Hussain\Desktop\waiz 
+hackthon\chatbot-backend\ingest.py", line 
+4, in <module>
+    from embeddings import EmbeddingEngine
+  File 
+"C:\Users\Waiz-Hussain\Desktop\waiz 
+hackthon\chatbot-backend\embeddings.py", 
+line 1, in <module>
+    from sentence_transformers import 
+SentenceTransformer
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\__init__.py", line 15, in 
+<module>
+    from 
+sentence_transformers.cross_encoder 
+import (
+    ...<4 lines>...
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\cross_encoder\__init__.py",
+ line 3, in <module>
+    from .CrossEncoder import CrossEncoder
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\cross_encoder\CrossEncoder.
+py", line 35, in <module>
+    from sentence_transformers.cross_encod
+er.fit_mixin import FitMixin
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\cross_encoder\fit_mixin.py"
+, line 20, in <module>
+    from sentence_transformers.datasets.No
+DuplicatesDataLoader import 
+NoDuplicatesDataLoader
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\datasets\__init__.py", 
+line 13, in <module>
+    from .ParallelSentencesDataset import 
+ParallelSentencesDataset
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\datasets\ParallelSentencesD
+ataset.py", line 19, in <module>
+    from sentence_transformers import 
+SentenceTransformer
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\SentenceTransformer.py", 
+line 36, in <module>
+    from sentence_transformers.model_card 
+import SentenceTransformerModelCardData, 
+generate_model_card
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\sentenc
+e_transformers\model_card.py", line 26, 
+in <module>
+    from transformers.integrations import 
+CodeCarbonCallback
+  File "<frozen importlib._bootstrap>", 
+line 1412, in _handle_fromlist
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2317, 
+in __getattr__
+    module = self._get_module(self._class_
+to_module[name])
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2347, 
+in _get_module
+    raise e
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2345, 
+in _get_module
+    return importlib.import_module("." + 
+module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\imp
+ortlib\__init__.py", line 88, in 
+import_module
+    return 
+_bootstrap._gcd_import(name[level:], 
+package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\integrations\integration_utils.py", 
+line 60, in <module>
+    from .. import TFPreTrainedModel
+  File "<frozen importlib._bootstrap>", 
+line 1412, in _handle_fromlist
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2317, 
+in __getattr__
+    module = self._get_module(self._class_
+to_module[name])
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2347, 
+in _get_module
+    raise e
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\utils\import_utils.py", line 2345, 
+in _get_module
+    return importlib.import_module("." + 
+module_name, self.__name__)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\imp
+ortlib\__init__.py", line 88, in 
+import_module
+    return 
+_bootstrap._gcd_import(name[level:], 
+package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\modeling_tf_utils.py", line 38, in 
+<module>
+    from .activations_tf import 
+get_tf_activation
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\transfo
+rmers\activations_tf.py", line 27, in 
+<module>
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: Your currently installed 
+version of Keras is Keras 3, but this is 
+not yet supported in Transformers. Please 
+install the backwards-compatible tf-keras 
+package with `pip install tf-keras`.

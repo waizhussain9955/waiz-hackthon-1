@@ -1,0 +1,8 @@
+{
+    "label": "Module 03: AI-Robot Brain",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Implement advanced perception and navigation using NVIDIA Isaac and ROS 2 Nav2."
+    }
+}

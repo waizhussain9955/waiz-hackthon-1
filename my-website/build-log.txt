@@ -1,0 +1,201 @@
+﻿
+> my-website@0.0.0 build
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Client
+[90m[[90mwebpackbar[90m][39m [36mΓä╣[39m Compiling Server
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Server: Compiled successfully in 47.56s
+[90m[[90mwebpackbar[90m][39m [32mΓ£ö[39m Client: Compiled successfully in 1.59m
+node.exe : [WARNING] Docusaurus found broken links!
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([WARNING 
+   ] Docusaurus found broken links!:String) [], Remo  
+  teException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Please check the pages of your site in the list 
+below, and make sure you don't reference any path 
+that does not exist.
+Note: it's possible to ignore broken links with the 
+'onBrokenLinks' Docusaurus configuration, and let the 
+build pass.
+
+It looks like some of the broken links we found 
+appear in many pages of your site.
+Maybe those broken links appear on all pages through 
+your site layout?
+We recommend that you check your theme configuration 
+for such links (particularly, theme navbar and 
+footer).
+Frequent broken links are linking to:
+- /physical-ai-textbook/docs/chapter-1-foundations
+
+Exhaustive list of all broken links found:
+- Broken link on source page path = 
+/physical-ai-textbook/404.html:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/archive:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/authors:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/blog/authors/all-sebastien-lorber-articles:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/authors/yangshun:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/first-blog-post:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/long-blog-post:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/mdx-blog-post:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/tags:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/tags/docusaurus:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/tags/facebook:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/tags/hello:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/tags/hola:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/blog/welcome:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/markdown-page:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/category/chapter-1-foundations:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/category/chapter-2-symbiosis:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/category/chapter-3-integration:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/category/chapter-4-practical:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/docs/category/chapter-5-future:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-1-foundations/ai-native-learning:
+   -> linking to ../chapter-2-symbiosis (resolved as: 
+/physical-ai-textbook/docs/chapter-2-symbiosis)
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-1-foundations/humanoid-robotics-lands
+cape:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-1-foundations/what-is-physical-ai:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-2-symbiosis/human-robot-interaction:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-2-symbiosis/partnership-models:
+   -> linking to ../chapter-3-integration (resolved 
+as: /physical-ai-textbook/docs/chapter-3-integration)
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-2-symbiosis/software-agents:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-3-integration/agent-hardware-bridge:
+   -> linking to ../chapter-4-practical (resolved as: 
+/physical-ai-textbook/docs/chapter-4-practical)
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-3-integration/control-systems:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-3-integration/sensors-actuators:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-4-practical/code-examples:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-4-practical/hands-on-projects:
+   -> linking to ../chapter-5-future (resolved as: 
+/physical-ai-textbook/docs/chapter-5-future)
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-4-practical/simulation-environments:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-5-future/career-pathways:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-5-future/continuous-learning:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = /physical-ai-textb
+ook/docs/chapter-5-future/emerging-trends:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/docs/intro:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+- Broken link on source page path = 
+/physical-ai-textbook/:
+   -> linking to 
+/physical-ai-textbook/docs/chapter-1-foundations
+
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.

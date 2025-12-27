@@ -1,0 +1,162 @@
+﻿python : 
+C:\Users\Waiz-Hussain\Desktop\waiz 
+hackthon\chatbot-backend\agent.py:3: 
+FutureWarning: 
+At line:1 char:65
++ ... hon -Force -ErrorAction 
+SilentlyContinue; python main.py 2>&1 | 
+Out-F ...
++                                         
+      ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecifie 
+   d: (C:\Users\Waiz-H...FutureWarning:   
+  :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeComma 
+   ndError
+ 
+
+All support for the `google.generativeai` 
+package has ended. It will no longer be 
+receiving 
+updates or bug fixes. Please switch to 
+the `google.genai` package as soon as 
+possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecate
+d-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+2025-12-27 21:27:09.072813: I 
+tensorflow/core/util/port.cc:153] oneDNN 
+custom operations are on. You may see 
+slightly different numerical results due 
+to floating-point round-off errors from 
+different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-27 21:27:13.488405: I 
+tensorflow/core/util/port.cc:153] oneDNN 
+custom operations are on. You may see 
+slightly different numerical results due 
+to floating-point round-off errors from 
+different computation orders. To turn 
+them off, set the environment variable 
+`TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\Waiz-Huss
+ain\AppData\Roaming\Python\Python313\site-
+packages\tf_keras\src\losses.py:2976: The 
+name 
+tf.losses.sparse_softmax_cross_entropy is 
+deprecated. Please use tf.compat.v1.losses
+.sparse_softmax_cross_entropy instead.
+
+INFO:     Started server process [7592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on 
+http://0.0.0.0:8000 (Press CTRL+C to quit)
+Traceback (most recent call last):
+  File 
+"C:\Users\Waiz-Hussain\Desktop\waiz 
+hackthon\chatbot-backend\main.py", line 
+34, in chat_endpoint
+    response_text, context = agent.chat(
+                             ~~~~~~~~~~^
+        user_query=request.query,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        history=request.history,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        
+selected_text=request.selected_text
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File 
+"C:\Users\Waiz-Hussain\Desktop\waiz 
+hackthon\chatbot-backend\agent.py", line 
+79, in chat
+    response = 
+chat.send_message(full_query)
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+generativeai\generative_models.py", line 
+578, in send_message
+    response = 
+self.model.generate_content(
+        contents=history,
+    ...<5 lines>...
+        request_options=request_options,
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+generativeai\generative_models.py", line 
+331, in generate_content
+    response = 
+self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+ai\generativelanguage_v1beta\services\gene
+rative_service\client.py", line 835, in 
+generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\gapic_v1\method.py", line 131, 
+in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\retry\retry_unary.py", line 294, 
+in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\retry\retry_unary.py", line 156, 
+in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\retry\retry_base.py", line 214, 
+in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\retry\retry_unary.py", line 147, 
+in retry_target
+    result = target()
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\timeout.py", line 130, in 
+func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Waiz-Hussain\AppData\Roam
+ing\Python\Python313\site-packages\google\
+api_core\grpc_helpers.py", line 77, in 
+error_remapped_callable
+    raise exceptions.from_grpc_error(exc) 
+from exc
+google.api_core.exceptions.NotFound: 404 
+models/gemini-1.5-flash is not found for 
+API version v1beta, or is not supported 
+for generateContent. Call ListModels to 
+see the list of available models and 
+their supported methods.
+Embedding Engine initialized on cpu
+INFO:     127.0.0.1:60441 - "POST /chat HTTP/1.1" 500 Internal Server Error
