@@ -60,7 +60,9 @@ export default function HumanoidChatbot() {
         setQuery('');
 
         try {
-            const response = await fetch('http://localhost:8001/chat', {
+            const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+            const API_URL = isLocal ? "http://localhost:8001/api/chat" : "/api/chat";
+            const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

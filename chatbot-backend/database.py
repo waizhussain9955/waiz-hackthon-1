@@ -49,12 +49,12 @@ def get_db():
     finally:
         db.close()
 
-def ensure_qdrant_collection(collection_name="textbook_vectors"):
+def ensure_qdrant_collection(collection_name="textbook_vectors_gemini"):
     collections = q_client.get_collections().collections
     exists = any(c.name == collection_name for c in collections)
     if not exists:
         q_client.create_collection(
             collection_name=collection_name,
-            vectors_config=VectorParams(size=384, distance=Distance.COSINE),
+            vectors_config=VectorParams(size=768, distance=Distance.COSINE),
         )
         print(f"Collection {collection_name} created.")

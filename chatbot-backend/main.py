@@ -28,7 +28,7 @@ class ChatResponse(BaseModel):
     response: str
     sources: List[dict]
 
-@app.post("/chat", response_model=ChatResponse)
+@app.post("/api/chat", response_model=ChatResponse)
 async def chat_endpoint(request: ChatRequest, db: Session = Depends(get_db)):
     try:
         response_text, context = agent.chat(

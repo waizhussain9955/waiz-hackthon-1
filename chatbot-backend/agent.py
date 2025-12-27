@@ -45,7 +45,7 @@ def textbook_search(query: str):
     # Use query_points as fallback for missing search attribute in some qdrant-client versions
     try:
         results = local_q_client.query_points(
-            collection_name="textbook_vectors",
+            collection_name="textbook_vectors_gemini",
             query=vector,
             limit=3
         )
@@ -55,7 +55,7 @@ def textbook_search(query: str):
         # Last resort: try classic search if it somehow exists
         try:
             results = local_q_client.search(
-                collection_name="textbook_vectors",
+                collection_name="textbook_vectors_gemini",
                 query_vector=vector,
                 limit=3
             )

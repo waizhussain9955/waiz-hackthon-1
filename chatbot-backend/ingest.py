@@ -7,7 +7,7 @@ from qdrant_client.models import PointStruct
 import uuid
 
 embedder = EmbeddingEngine()
-COLLECTION_NAME = "textbook_vectors"
+COLLECTION_NAME = "textbook_vectors_gemini"
 
 def clean_mdx(content):
     # Remove frontmatter
